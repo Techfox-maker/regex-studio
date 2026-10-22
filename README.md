@@ -1,6 +1,6 @@
 # Regex Studio
 
-Unreleased development baseline. No public version has been released from this history.
+Current release: **20261022-v0.0.1**. See the [release notes](docs/releases/20261022-v0.0.1.md).
 
 A visual regex builder with drag-and-drop rules, common templates, live validation, and character-level error highlighting. Export expressions and code snippets for JavaScript, Python, Java, C#, and Linux shell tools. Runs in your browser and works offline.
 
