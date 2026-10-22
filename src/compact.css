@@ -1,0 +1,32 @@
+/* Keep a rule's type and literal value together while the remaining controls wrap. */
+.builder-panel .rule-column-labels{display:none}
+.builder-panel .rule-card{margin:0 12px 7px;padding:10px 9px;border-radius:7px;container-type:inline-size;min-height:68px}
+.builder-panel .rule-main{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.builder-panel .drag-handle{display:grid;place-items:center;flex:0 0 18px;width:18px;height:29px;border:0;padding:0;border-radius:4px;background:transparent;color:#a3aac0;font-size:19px;line-height:1;cursor:grab;touch-action:none;user-select:none}
+.builder-panel .drag-handle:hover{color:var(--accent);background:#eef0fd}
+.builder-panel .drag-handle:active{cursor:grabbing}
+.builder-panel .rule-match{display:flex;align-items:center;gap:5px;flex:1 1 130px;min-width:100px}
+.builder-panel .rule-match.with-value{flex:1 1 205px;min-width:180px}
+.builder-panel .type-wrap{flex:1 1 130px;min-width:100px}
+.builder-panel .with-value .type-wrap{flex:0 1 110px;min-width:91px}
+.builder-panel .rule-main select{height:30px;padding:5px 21px 5px 7px;font-size:11px;line-height:1.2}
+.builder-panel .rule-main .select-wrap:after{top:3px;right:7px}
+.builder-panel .rule-value{flex:1 1 95px;min-width:67px;width:95px;height:30px;padding:5px 7px;font-size:11px;line-height:1.2}
+.builder-panel .repeat-wrap{flex:0 1 91px;min-width:78px}
+.builder-panel .quantity{flex:0 0 auto;display:flex;align-items:center;gap:4px;font-size:9px;white-space:nowrap}
+.builder-panel .quantity input{height:30px;width:43px;padding:4px;font-size:11px;line-height:1.2;appearance:textfield;-moz-appearance:textfield}
+.builder-panel .quantity input::-webkit-inner-spin-button,.builder-panel .quantity input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.builder-panel .rule-controls{display:flex;flex:0 0 auto;align-items:center;gap:0;margin-left:auto}
+.builder-panel .rule-controls button{width:21px;height:30px;font-size:14px}
+.builder-panel .rule-description{display:flex;align-items:center;gap:7px;margin:5px 0 0 24px;min-width:0;font-size:9px;line-height:1.4;white-space:nowrap}
+.builder-panel .rule-description-text{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.builder-panel .rule-preview{display:block;flex:0 1 auto;min-width:0;max-width:112px;overflow:hidden;text-overflow:ellipsis;font-size:9px}
+.builder-panel .lazy-label{flex:0 0 auto;margin-left:auto;gap:3px;font-size:9px;line-height:1.4}
+.builder-panel .lazy-label input{margin:0;width:12px;height:12px}
+.builder-panel .add-rule{margin:5px 12px 20px;width:calc(100% - 24px);padding:10px}
+.builder-panel .rule-card.is-dragging{opacity:.5;border-color:#818ae6;background:#f0f1ff}
+.builder-panel .rule-card.drag-over{border-color:#818ae6;box-shadow:0 -3px 0 #818ae6}
+@container(max-width:390px){.builder-panel .rule-description-text{max-width:150px}.builder-panel .rule-preview{max-width:80px}}
+@media(max-width:760px){.builder-panel .rule-card{margin-left:10px;margin-right:10px;padding:9px 8px}.builder-panel .rule-main{gap:5px}.builder-panel .rule-match.with-value{min-width:174px;flex-basis:190px}.builder-panel .with-value .type-wrap{min-width:88px}.builder-panel .rule-controls button{width:22px}.builder-panel .rule-description{margin-left:23px;gap:5px}.builder-panel .rule-description-text{max-width:none}.builder-panel .rule-preview{max-width:86px}.builder-panel .quantity input{width:41px}.builder-panel .add-rule{margin-left:10px;margin-right:10px;width:calc(100% - 20px)}}
+.builder-panel .has-character-editor .rule-match{flex-basis:300px;min-width:260px;align-items:flex-start}.builder-panel .has-character-editor .type-wrap{padding-top:0;flex-basis:105px}.builder-panel .character-editor{min-width:155px;flex:1}.builder-panel .character-controls{display:flex;gap:5px;align-items:center}.builder-panel .character-mode-wrap{flex:0 0 55px;min-width:55px}.builder-panel .character-mode-wrap select{font-size:10px;padding-left:6px;padding-right:16px}.builder-panel .character-controls .rule-value{min-width:80px;width:auto;flex:1}.builder-panel .range-presets{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-top:5px}.builder-panel .range-preset{border:1px solid #dce1ee;background:#fff;border-radius:4px;color:#939eb9;padding:2px 6px;font:9px/1.5 var(--mono)}.builder-panel .range-preset:hover{border-color:#a7b2e6;color:#6676bd}.builder-panel .range-preset.selected{background:#edf0ff;border-color:#b6c0ed;color:#6576bd}.builder-panel .range-presets>span{font-size:8px;color:#b0b8ca}.builder-panel .has-character-editor .rule-main>.repeat-wrap{align-self:flex-start}.builder-panel .has-character-editor .rule-main>.rule-controls{align-self:flex-start}.builder-panel .has-character-editor .rule-main>.quantity{align-self:flex-start}.builder-panel .has-character-editor .rule-description{margin-top:7px}
+.lazy-explainer{margin:0 20px 20px;border:1px solid #e5e8f3;border-radius:6px;background:#fafbff;font-size:10px;color:#8b96b2}.lazy-explainer summary{cursor:pointer;padding:10px 12px;color:#7d89ac;font-size:10px}.lazy-explainer summary>span{float:right;font-size:8px;color:#a8b0c7}.lazy-explainer-content{padding:0 12px 7px}.lazy-explainer p{font-size:10px;line-height:1.9;margin:7px 0 12px}.lazy-explainer strong{font-weight:550;color:#7281ae}.lazy-explainer table{width:100%;border-collapse:collapse;font-size:9px;table-layout:fixed}.lazy-explainer th,.lazy-explainer td{text-align:left;vertical-align:top;padding:8px 6px;border:1px solid #e6e9f3;overflow-wrap:anywhere}.lazy-explainer th{background:#f0f3fb;font-weight:500;color:#8490b0}.lazy-explainer code{font:10px/1.8 var(--mono);color:#7c89b2;overflow-wrap:anywhere}.lazy-explainer mark{background:#e1f1e9;color:#598b77;padding:1px 3px;border-radius:3px}.lazy-explainer .lazy-caveat{font-size:9px;color:#9ca6bc}.lazy-info{width:15px;height:15px;border:1px solid #cdd4e8;border-radius:50%;padding:0;background:#fff;color:#99a4c1;cursor:pointer;font:9px/1 var(--mono);margin-left:-2px;flex:0 0 auto}.lazy-info:hover{border-color:#8d9bce;color:#6e7db1}.unmatched-text{color:#c21f35;background:#ffe0e5;font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:2px}.match-legend{display:flex;gap:13px;margin:0 23px 12px;font-size:8px;color:#98a2ba}.match-legend .matched-legend{color:#4e967e}.match-legend .unmatched-legend{color:#b74459}
